@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "851578670028",
+    "project_id": "peoyemexa-webapp",
+    "storage_bucket": "peoyemexa-webapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851578670028:android:ebdad43cd8ad6142966b69",
+        "android_client_info": {
+          "package_name": "com.proyemexa.inventario_webapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851578670028-j3dtc8v06q4v9im23rdvoh9poud5frs9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.proyemexa.inventario_webapp",
+            "certificate_hash": "9b96a30ab3875a2ed263fd3bf82ba1a1dd724cfd"
+          }
+        },
+        {
+          "client_id": "851578670028-9t3qsgmoa89m9pos5scrbvr5q3hq148a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl5A0TsLdHJNLFklKZ4gE-X68XOlpRH8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851578670028-9t3qsgmoa89m9pos5scrbvr5q3hq148a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
