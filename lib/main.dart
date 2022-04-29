@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:inventario_webapp/inventario/inventario_esqueleto.dart';
+import 'package:inventario_webapp/presentation/router/app_router.dart';
 
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,17 +16,18 @@ main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key})
+      : super(key: key); // This widget is the root of your application.
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final AppRoute _appRoute = AppRoute();
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Proyemexa Inventario',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Firebase Test'),
+      onGenerateRoute: _appRoute.onGenerateRoute,
     );
   }
 }
@@ -44,11 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-
       floatingActionButton: FloatingActionButton(
         onPressed: () => FirebaseFirestore.instance
-            .collection('Testing')
-            .add({'timeStamp': Timestamp.fromDate(DateTime.now())}),
+            .collection('Inventario')
+            .doc('material')
+            .set(inventarioMaterial),
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
